@@ -4,7 +4,7 @@
 #
 Name     : pypi-pylev
 Version  : 1.4.0
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/11/f2/404d2bfa30fb4ee7c7a7435d593f9f698b25d191cafec69dd0c726f02f11/pylev-1.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/f2/404d2bfa30fb4ee7c7a7435d593f9f698b25d191cafec69dd0c726f02f11/pylev-1.4.0.tar.gz
 Summary  : A pure Python Levenshtein implementation that's not freaking GPL'd.
@@ -14,9 +14,6 @@ Requires: pypi-pylev-license = %{version}-%{release}
 Requires: pypi-pylev-python = %{version}-%{release}
 Requires: pypi-pylev-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pylev
-Provides: pylev-python
-Provides: pylev-python3
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(wheel)
 
@@ -63,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641476239
+export SOURCE_DATE_EPOCH=1651016186
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
